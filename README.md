@@ -1,4 +1,6 @@
-Question 1
+#Shopify Winter 2021 Data Science Challenge
+
+###Question 1
 
 a. The naive solution is calculating the average over the 'order_amounts' column ($3145.128). While this a reasonable estimate
    of the average amount of the orders made at each store, it is not indicative of the average shoe price as it does not take into 
@@ -8,19 +10,21 @@ b. A better way to calculate the average shoe price would be to calculate the pr
    dividing the total amount of the order placed by the number of units at each store sold and then calculate the average of this value 
    over all the stores.  
 
-c. The new Average Order Value computes to $387.74.
+c. The new Average Order Value computes to *$387.74*.
 
 
-Question 2
+###Question 2
 
 a. 
+```
 SELECT COUNT(*) 
 FROM [Orders] 
 WHERE ShipperID = 1
-
+```
 Answer = 54
 
 b. 
+```
 SELECT LastName FROM Employees
 INNER JOIN (SELECT EmployeeID, COUNT(*) as UnitsSold 
 			FROM [Orders] 
@@ -30,10 +34,11 @@ INNER JOIN (SELECT EmployeeID, COUNT(*) as UnitsSold
             ) as EmpSold
 ON
 Employees.EmployeeID = EmpSold.EmployeeID
-
+```
 Answer = Peacock
 
 c. 
+```
 SELECT ProductName FROM [Products]
 INNER JOIN (SELECT ProductID, SUM(Quantity) as Quantity 
             FROM OrderDetails 
@@ -52,5 +57,5 @@ INNER JOIN (SELECT ProductID, SUM(Quantity) as Quantity
             ) as MostOrderedProductFromGermany
 ON 
 Products.ProductID = MostOrderedProductFromGermany.ProductID
-
+```
 Answer = Boston Crab Meat
