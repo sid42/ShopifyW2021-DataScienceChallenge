@@ -1,6 +1,6 @@
-#Shopify Winter 2021 Data Science Challenge
+# Shopify Winter 2021 Data Science Challenge
 
-###Question 1
+### Question 1
 
 a. The naive solution is calculating the average over the 'order_amounts' column ($3145.128). While this a reasonable estimate
    of the average amount of the orders made at each store, it is not indicative of the average shoe price as it does not take into 
@@ -13,7 +13,7 @@ b. A better way to calculate the average shoe price would be to calculate the pr
 c. The new Average Order Value computes to *$387.74*.
 
 
-###Question 2
+### Question 2
 
 a. 
 ```
