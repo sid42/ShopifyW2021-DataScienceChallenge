@@ -2,7 +2,7 @@
 
 ### Question 1
 
-a. The naive solution is calculating the average over the 'order_amounts' column ($3145.128). While this a reasonable estimate
+a. The naive solution is calculating the average over the 'order_amounts' column ($3145.128). While this is a reasonable estimate
    of the average amount of the orders made at each store, it is not indicative of the average shoe price as it does not take into 
    account the number of shoes being sold, thus giving us an estimate higher than the expected value of a single shoe. 
    
